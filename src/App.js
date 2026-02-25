@@ -16,13 +16,13 @@ const App=()=>{
     return (
       
       <div>
-        <Router>
+        <Router basename="/NewsMonkey">
           <LoadingBar
         color="#f11946"
         progress={progress}/>
        <Navbar></Navbar>
         
-       <Routes basename="/NewsMonkey">
+       <Routes >
         <Route exact path="/" element={<News setProgress={setProgress} apikey={apiKey} key="general"  category ="general"></News>}> </Route>
         <Route exact path="/business" element={<News setProgress={setProgress} apikey={apiKey} key="business "  category ="business"></News>} ></Route>
         <Route exact path="/entertainment" element={<News setProgress={setProgress} apikey={apiKey} key="entertainment "  category ="entertainment"></News>} ></Route>
