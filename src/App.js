@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
@@ -16,7 +16,7 @@ const App=()=>{
     return (
       
       <div>
-        <Router basename="/NewsMonkey">
+        <Router >
           <LoadingBar
         color="#f11946"
         progress={progress}/>
